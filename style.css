@@ -14,7 +14,7 @@ body{
     display: flex;
     position: sticky;
     height: 2rem;
-    background-color: brown;
+    background-color:chocolate;
 
 }
 
@@ -22,15 +22,15 @@ body{
     position: sticky;
     top: 2rem; 
     display: flex;
-    background-color: red;
+    background-color: rgb(189, 90, 20);
     padding-left: 1rem; 
     padding-right: 1rem;
     height: 3.5rem;
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    border-top: 4px solid sienna;
-    border-bottom: 4px solid sienna;
+    border-top: 1px solid rgb(254, 150, 76);
+    border-bottom: 2px solid rgb(254, 150, 76);
     color: #fff;                
 }
 
@@ -83,7 +83,7 @@ body{
 }
 
 .hero-card-identity{
-    border: 2px solid #fff;
+    border: 1px solid black;
     height: 70%;
   display: flex;
     flex-direction: column;
@@ -97,7 +97,7 @@ body{
 .hero-card-identity img{
     width: 90%;
     height: 65%;
-    border: 2px solid black;
+    border: 1px solid black;
     margin-top: 0;
     object-fit: cover;
 }
@@ -111,31 +111,31 @@ body{
 .profissao{
     
     width: 100%;
-    border-top: 2px solid black;
+    border-top: 1px solid black;
     font-size: 0.8rem;
     padding-top: 15px
 }
 
 
 .hero-card-core{
-    border: 2px solid #fff;
+    border: 1px solid black;
     height: 30%;
 }
 
 .hero-card-projects{
-    border: 2px solid #fff;
+    border: 1px solid black;
     height: 100%;
    
 }
 
 .hero-card-skills{
-    border: 2px solid #fff;
+    border: 1px solid black;
     height: 40%;
     
 }
 
 .hero-card-research{
-    border: 2px solid #fff;
+    border: 1px solid black;
     height: 60%;
     
 }
@@ -150,7 +150,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: chocolate;
     
 }
 .letreiro p{
