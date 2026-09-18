@@ -13,22 +13,31 @@
     <div class="top-bar"></div>
     <header id="main-navbar">
         <nav class="nav-menu">
-        <a href="#home" id="nav-home">Natan_Bagatoli.EXE</a>
-        <a href="#projetos" id="nav-projetos">Projetos</a>
-        <a href="#sobremim" id="nav-sobremim">Sobre</a>
-        <a href="#pesquisas" id="nav-pesquisas">Pesquisa</a>
-        <a href="#skills" id="nav-skills">Skills</a>
-        <a href="#contato" id="nav-contato">Contato</a>
+        <a href="#home" id="nav-home">
+            <div class="logo">NB</div>
+            <div class="nome-cargo">
+                <span class="nome">NATAN_BAGATOLI<span class="exe">.EXE</span></span>
+            <p class="cargo">Engenheiro de Software</p>
+            </div>
+        </a>
+        
+        <a href="#projetos" id="nav-projetos"><i data-lucide="briefcase-business"></i>Projetos</a>
+        <a href="#sobremim" id="nav-sobremim"><i data-lucide="search"></i>Sobre</a>
+        <a href="#pesquisas" id="nav-pesquisas"><i data-lucide="cpu"></i>Pesquisa</a>
+        <a href="#skills" id="nav-skills"><i data-lucide="settings"></i>Skills</a>
+        <a href="#contato" id="nav-contato"><i data-lucide="circle-user"></i>Contato</a>
         </nav>
     </header>
     <main>
         <section id="home">
+            
         <div class="hero-container"> 
+            <canvas id="starly-background"></canvas>
         <div class="hero-grid">
             <div class="hero-col1">
                 <div class="hero-card-identity">
                     <img src="imagem_de_teste.png" alt="Imagem de teste">
-                    <p class="p">Natan Bagatoli - Meu Objetivo é me tornar engenheiro de software</p>
+                    <p class="p">Natan Bagatoli - Meu Objetivo é me tornar um engenheiro de software</p>
                     <p class="p">Uninter - Engenharia de Software</p>
                     <div class="profissao">O melhor repositor do atacadão</div>
                 </div>
@@ -40,10 +49,15 @@
                 </div>
                 </div>
             <div class="hero-col2">
-                <div class="hero-card-projects">Meus Projetos
-                <img src="imagem-teste.jpg" alt="Imagem de teste">      
-
-                    <button class="btn-project">Ver Projetos</button>
+                <div class="hero-card-projects">
+                    <p class="hero-title">Olá! Usuario.EXE</p>
+                    <div class="description">
+                <img class="hero-imagem" src="imagem_de_teste.png" alt="Imagem de teste">
+                    <div class="buttons">
+                    <button class="btn-project">Ver_Projetos</button>
+                    <button class="btn-project">Ver_Sobre_Mim</button>
+                    </div>    
+                    </div>
                 </div>
             </div>
                 <div class="hero-col3">
@@ -51,25 +65,26 @@
                 <div class="hero-card-research">pesquisas</div>
         </div>
         </div>
+        </div>
+      
+        </section>
         <div class="letreiro">
             <p>✦ Bem-vindo ao meu portfólio! ✦ Desenvolvedor Web ✦ Software Engineer ✦ AI Engineer ✦ FrontEnd Developer ✦ BackEnd Developer ✦ FullStack Developer </p>
         </div>
-        </div>
-        </section>
         <section id="projetos">
         <div class="projects-container">
-            <div class="projetos_selecionados">lorem ipsum</div>
-            <h1>Projetos_Selecionados</h1>
-            <p>lorem ipsum dolor sit amet</p>
-            <button class="btn-filtro1">Todos os projetos</button>
+            <div class="projetos-selecionados">01:SELECTED_WORKS</div>
+            <h1 class="projetos-title">Projetos_Selecionados</h1>
+            <p class="projetos-subtitle">Produtos reais que desenhei e construí de ponta a ponta — de MVPs vencedores de hackathon a plataformas full-stack em saúde, fintech e IA.</p>
+            <button class="btn-filtro">Todos os projetos</button>
             <button class="btn-filtro1">FILTRO 1</button>
-            <button class="btn-filtro1">FILTRO 2</button>
+            <button class="btn-filtro2">FILTRO 2</button>
             <div class="projects-grid">
-                <div class="project-card1">projeto 1
-                    <p>lorem ipsum dolor sit amet</p>
-                    <img src="imagem-teste.jpg" alt="Imagem de teste">
+                <div class="project-card1">Website E-Commerce
+                    <img src="imagem_de_teste.jpg" alt="Imagem de teste">
+                    <p>Site temático e funcional para pizzaria italiana, com cardápio, localizações, pedidos e franquias.</p>
                     <p>lorem ipsum dolor sit amet et dolore magna aliqua</p>
-                    <p>lorem ipsum dolor sit amet</p>
+                    <p>React, TypeScript & TailwindCSS</p>
                 </div>
                 <div class="project-card2">projeto 2
                     <p>lorem ipsum dolor sit amet</p>
@@ -107,20 +122,49 @@
         <section id="sobremim">
             <div class="about-container">
                 <h1>Sobre mim</h1>
-                    <p>lorem ipsum dolor sit amet et dolore magna aliqua</p>
                 <div class="about-card">
-                    <p><span>HELLO WORLD</span></p>
-                       
+                    <div class="about-grid">
+                    <div class="colabout1">
+                    <img class="perfilimg" src="imagem_de_teste.png" alt="Imagem de Teste">
+                    <button class="curriculobtn">Baixar CV</button>
+                    </div>
+                    <div class="colabout2">
+                    <h1>titulo mt daora wow</h1>
+                    <p><span> </span></p>
+
+                    <p><span> </span></p>
+
+                    <p><span></span></p>
+
+                    <p><span></span></p>
+                   </div>    
+                </div>
                 </div>
                 <div class="xp-grid">
-                    <button class="btn">Experiencia 1</button>
-                    <button class="btn">Experiencia 2</button>
-                    <button class="btn">Experiencia 3</button>
-                    <button class="btn">Experiencia 4</button>
-                    <button class="btn">Experiencia 5</button>
+                    <button class="aboutmebtn" data-xp="0">Experiencia 1</button>
+                    <button class="aboutmebtn" data-xp="1">Experiencia 2</button>
+                    <button class="aboutmebtn" data-xp="2">Experiencia 3</button>
+                    <button class="aboutmebtn" data-xp="3">Experiencia 4</button>
+                    <button class="aboutmebtn" data-xp="4">Experiencia 5</button>
                 </div>
                 <div class="xp-card">
-                    <p><span>hello world 2</span></p>
+                    <p class="xp-date"></p>
+                    <p class="xp-text"></p>
+                    <p class="xp-desc"></p>
+                    <p class="xp-learnings"></p>
+                </div>
+                <div class="xp-grid">
+                    <button class="aboutmebtnfm" data-fm="0">Formação 1</button>
+                    <button class="aboutmebtnfm" data-fm="1">Formação 2</button>
+                    <button class="aboutmebtnfm" data-fm="2">Formação 3</button>
+                    <button class="aboutmebtnfm" data-fm="3">Formação 4</button>
+                    <button class="aboutmebtnfm" data-fm="4">Formação 5</button>
+                </div>
+                <div class="xp-card">
+                    <p class="fm-date"></p>
+                    <p class="fm-text"></p>
+                    <p class="fm-desc"></p>
+                    <p class="fm-learnings"></p>
                 </div>
             </div>
         </section>
@@ -191,5 +235,8 @@
     <footer>
         FOOTER 
     </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+    <script src="script.js"></script>
 </body>
 </html>

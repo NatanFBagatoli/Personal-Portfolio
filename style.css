@@ -5,6 +5,13 @@ body{
     margin: 0;
 }
 
+#starly-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 /* ============================================
    NAVBAR
    ============================================ */
@@ -13,14 +20,14 @@ body{
     top: 0;
     display: flex;
     position: sticky;
-    height: 2rem;
+    height: 1.5rem;
     background-color:chocolate;
-
+    z-index: 40; 
 }
 
 #main-navbar{
     position: sticky;
-    top: 2rem; 
+    top: 1.5rem; 
     display: flex;
     background-color: rgb(189, 90, 20);
     padding-left: 1rem; 
@@ -31,21 +38,90 @@ body{
     gap: 4rem;
     border-top: 1px solid rgb(254, 150, 76);
     border-bottom: 2px solid rgb(254, 150, 76);
-    color: #fff;                
+    color: #fff;
+    z-index: 40;                
 }
-
+#nav-home{
+    display: flex;
+    align-items: center;    
+    gap: 1rem;        
+    color: black;
+    margin-right: 10rem;
+    transition: all 0.3s ease;
+    
+}
+ #nav-home:hover{
+    transform: scale(1.05);
+}
+.nome-cargo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0.5;
+    padding-top: 1rem;
+}
+.nome {
+   
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.cargo {
+    font-weight: 600;
+    font-size: 0.9rem;  
+    color: rgb(138, 1, 1);    
+    text-shadow:
+        0 0 5px #9c1f05,
+        0 0 10px rgb(225, 111, 11),
+        0 0 20px rgb(255, 111, 0),
+        0 0 40px rgb(163, 7, 7);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black 1px solid;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
+    transition: all 0.3s ease;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: rgb(138, 1, 1);
+    
+}
 .nav-menu{
     display: flex;              
-    gap: 1.5rem; 
+    gap: 2rem; 
+    align-items: center; 
+    transition: all 0.3s ease;
+    
 }
 .nav-menu a {
-  color: #fff;                
-  text-decoration: none;      
+  color: black;                
+  text-decoration: none;                 
+  padding-bottom: 4px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  font-weight: 600;
 }
-
+.nav-menu a:hover{
+    transform: scale(1.05);
+}
+.exe{
+    color: rgb(138, 1, 1);
+}
 /* ============================================
    HERO
    ============================================ */
+.hero-container{
+    position: relative;
+    overflow: hidden;
+}
+
 
 .hero-grid {
   
@@ -66,7 +142,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-    
+
 }
 
 .hero-col2{
@@ -78,19 +154,20 @@ body{
 .hero-col3{
 
     display: flex;
-  flex-direction: column; 
-  gap: 1rem;
+    flex-direction: column; 
+    gap: 1rem;
 }
 
 .hero-card-identity{
     border: 1px solid black;
     height: 70%;
-  display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding: 1rem;
     box-sizing: border-box;
+    background-color: rgb(139, 139, 139);
     
     
 }
@@ -120,24 +197,75 @@ body{
 .hero-card-core{
     border: 1px solid black;
     height: 30%;
+    background-color: rgb(139, 139, 139);
 }
 
 .hero-card-projects{
-    border: 1px solid black;
+    border: 1px solid rgb(155, 3, 3);
     height: 100%;
-   
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.50rem;
+    box-sizing: border-box;
+    background-color: rgb(139, 139, 139);
+    
 }
-
+.hero-title{
+    border: 1px solid black;
+    margin-top: 2%;
+}
+.hero-imagem{
+    margin: 2%;
+    width: 90%;
+    height: 40%;
+    object-fit: cover;
+}
 .hero-card-skills{
     border: 1px solid black;
     height: 40%;
+    background-color: rgb(139, 139, 139);
     
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20%;
+    
+}
+
+.btn-project{
+    display: block;
+    border: black 2px solid;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
+    transition: all 0.3s ease;
+    
+}
+ .btn-project:hover{
+    background-color: red;
+    transform: scale(1.05);
+    
+   }
+
+.description{
+border: 1px solid black;
+padding: 1rem;
+    box-sizing: border-box;
 }
 
 .hero-card-research{
     border: 1px solid black;
     height: 60%;
-    
+    background-color: rgb(139, 139, 139);
+     
 }
 
 .letreiro{
@@ -169,6 +297,10 @@ body{
 /* ============================================
    PROJECTS
    ============================================ */
+
+.projects-container{
+padding: 4rem;
+}
 
 .projects-grid{
     display: grid;
@@ -203,43 +335,135 @@ body{
     
 }
 
+.projetos-selecionados{
+    border: black 2px solid;
+}
+.projetos-title{
+
+}
+.projetos-subtitle{
+
+}
+.btn-filtro{
+    display: block;
+    border: black 2px solid;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
+}
+.btn-filtro1{
+    display: block;
+    border: black 2px solid;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
+}
+.btn-filtro2{
+    display: block;
+    border: black 2px solid;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
+}
+
+
 /* ============================================
    ABOUT ME
    ============================================ */
     .about-container{
         padding: 4rem;
-        color: #fff;
+        color: black; 
     }
    .about-card{
-    
-    border: 2px solid #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff; 
+    background-color: rgb(212, 212, 216);
+    border: 2px solid black;
+    color: black; 
+   }
+   .about-grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 1rem;
 
    }
-
+   .colabout1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+    align-items: center;
+    justify-content: center;
+   }
+   .colabout2{
+    display: flex;
+    flex-direction: column;
+    
+   }
    .xp-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
     padding: 4rem;
    }
-
-   .xp-card{
-    border: 2px solid #fff;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    color: #fff;
-   }
-
-   .btn{
+   .curriculobtn{
     display: block;
     border: black 2px solid;
     padding: 0.75rem;
     cursor: pointer;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
+    transition: all 0.3s ease;
+    width: 50%;
+    
+   }
+   .curriculobtn:hover{
+    background-color: red;
+    transform: scale(1.05);
+    
+   }
+   .perfilimg{
+  width: 100%;
+  max-width: 300px;    
+  height: auto;         
+  aspect-ratio: 1 / 1;  
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 4px;
+   }
+
+   .xp-card{
+    background-color: rgb(212, 212, 216);
+    border: 2px solid black;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: black; 
+   }
+
+   .aboutmebtn{
+    display: block;
+    border: black 2px solid;
+    padding: 0.75rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
+    transition: all 0.3s ease;
+
+   }
+   .aboutmebtn:hover{
+    background-color: red;
+    transform: scale(1.05);
+    
+   }
+
+   .aboutmebtnfm{
+    background-color: #fff;
+    display: block;
+    border: black 2px solid;
+    padding: 0.75rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
+    transition: all 0.3s ease;
+   }
+
+   .aboutmebtnfm:hover{
+    background-color: red;
+    transform: scale(1.05);
+    
    }
 /* ============================================
    SKILLS
