@@ -13,13 +13,13 @@ const aprendizadosfm = document.querySelector(".fm-learnings")
 const experiencias = [
     {
         data:"2025 - 2026",
-        titulo: "Desenvolvedor Web Freelancer",
-        descricao: "curso focado no desenvolvimento de sistemas",
+        titulo: "titulo 1",
+        descricao: "desc 1",
         aprendizados: [
-            "html",
-            "css",
-            "java",
-            "arduino"
+            "✦ aprendizado 1",
+            "✦ aprendizado 2",
+            "✦ aprendizado 3",
+            "✦ aprendizado 4"
         ]
     },
 
@@ -73,13 +73,13 @@ const experiencias = [
 const formacoes = [
     {
         datafm: "2026",
-        titulofm: "cjftgjtfgjao",
-        descricaofm: "fre78yfge78yg",
+        titulofm: "titulo 1",
+        descricaofm: "desc 1",
         aprendizadosfm: [
-            "jfngtjnftgj",
-            "rjfgtjfrjt",
-            "rfjnjfnjftgrj",
-            "ejfrtgnjhtgfnhjc"
+            "✦ aprendizado 1",
+            "✦ aprendizado 2",
+            "✦ aprendizado 3",
+            "✦ aprendizado 4"
         ]
     },
     {
@@ -190,23 +190,111 @@ const estrelas = [];
 
     for (let i = 0; i < 300; i++){
         estrelas.push({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            tamanho: Math.random() * 5
+            x: Math.random() * canvas.width - canvas.width / 2, 
+            y: Math.random() * canvas.height - canvas.height / 2,
+            tamanho: Math.random() * 5 + 1,
+
+            velocidade: Math.random() * 0.5 + 0.1,
+
+            pontas: 4
         });
     }
-estrelas.forEach(estrela => {
 
-ctx.beginPath();
+function desenharestrela(x, y, tamanho, pontas) {
+    
+    ctx.beginPath();
+const quantidadepontos = pontas * 2;
+    for (let i = 0; i < quantidadepontos; i++) {
+const angulo = i * Math.PI / pontas;
 
-ctx.arc(
-    estrela.x, 
-    estrela.y, 
-    estrela.tamanho,   
-    0,
-    Math.PI * 2
-);
+const raio = i % 2 === 0
+        ? tamanho 
+        : tamanho / 2
 
+    const px = x + Math.cos(angulo) * raio;
+    const py = y + Math.sin(angulo) * raio;
+
+    if (i === 0){
+        ctx.moveTo(px, py);
+    } else{
+        ctx.lineTo(px, py);
+    }
+    }
+ctx.closePath();
 ctx.fillStyle = "white";
 ctx.fill();
+}
+
+function moverestrelas(){
+
+    estrelas.forEach(estrela => {
+        const distancia = Math.sqrt(
+            estrela.x ** 2 +
+            estrela.y ** 2
+
+        );
+    if (distancia === 0) {
+            estrela.x = 1;
+            estrela.y = 1;
+            return;
+    }
+        estrela.x +=
+        (estrela.x / distancia) *
+        estrela.velocidade;
+
+        estrela.y +=
+        (estrela.y / distancia) *
+        estrela.velocidade;
+
+        estrela.velocidade += 0.002;
+
+        if(
+            estrela.x < -canvas.width / 2 ||
+            estrela.x > canvas.width / 2 ||
+            estrela.y < -canvas.height / 2 ||
+            estrela.y > canvas.height / 2
+        ) {
+            estrela.x = Math.random() * 100 - 50;
+            estrela.y = Math.random() * 100 - 50;
+
+            estrela.velocidade = Math.random() * 0.3 + 0.1;
+        }
+    
+    });
+}
+
+function desenharestrelas() {
+
+    ctx.clearRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+
+    estrelas.forEach(estrela => {
+        const x = canvas.width / 2 + estrela.x;
+        const y = canvas.height / 2 + estrela.y;
+
+        desenharestrela(
+            x,
+            y,
+            estrela.tamanho,
+            estrela.pontas
+        );
+
+    });
+}
+
+function animarestrelas() {
+    moverestrelas();
+    desenharestrelas();
+    requestAnimationFrame(animarestrelas);
+}
+
+animarestrelas();
+
+window.addEventListener("resize", () => {
+
+    desenharestrelas();
  });

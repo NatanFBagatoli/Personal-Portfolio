@@ -167,7 +167,7 @@ body{
     justify-content: flex-start;
     padding: 1rem;
     box-sizing: border-box;
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(212, 212, 216);
     
     
 }
@@ -197,7 +197,7 @@ body{
 .hero-card-core{
     border: 1px solid black;
     height: 30%;
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(212, 212, 216);
 }
 
 .hero-card-projects{
@@ -208,7 +208,7 @@ body{
     padding-right: 1rem;
     padding-bottom: 0.50rem;
     box-sizing: border-box;
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(212, 212, 216);
     
 }
 .hero-title{
@@ -224,7 +224,7 @@ body{
 .hero-card-skills{
     border: 1px solid black;
     height: 40%;
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(212, 212, 216);
     
 }
 
@@ -264,7 +264,7 @@ padding: 1rem;
 .hero-card-research{
     border: 1px solid black;
     height: 60%;
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(212, 212, 216);
      
 }
 
@@ -307,62 +307,103 @@ padding: 4rem;
     grid-template-columns: 2fr 2fr 2fr; 
     gap: 1rem;
     padding: 4rem;
-    color: #fff;      
-    
+    color: black;       
 }
+
 .project-card1{
-    border: 2px solid #fff;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(212, 212, 216);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
     
 }
+
+
 .project-card2{
-    border: 2px solid #fff;
-    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(212, 212, 216);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
 }
+
 .project-card3{
-    border: 2px solid #fff;
-    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(212, 212, 216);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
 }
+
 .project-card4{
-    border: 2px solid #fff;
-    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(212, 212, 216);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
 }
+
 .project-card5{
-    border: 2px solid #fff;
-    
+   border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    background-color: rgb(212, 212, 216);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
 }
+
 .project-card6{
-    border: 2px solid #fff;
-    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(212, 212, 216);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
 }
 
 .projetos-selecionados{
     border: black 2px solid;
 }
-.projetos-title{
 
+.preview-img-project{
+    width: 100%;
+    max-width: 300px;    
+    height: auto;         
+    aspect-ratio: 1 / 1;  
+    object-fit: cover;
 }
-.projetos-subtitle{
 
-}
 .btn-filtro{
     display: block;
     border: black 2px solid;
     cursor: pointer;
     box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
 }
+
 .btn-filtro1{
     display: block;
     border: black 2px solid;
     cursor: pointer;
     box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
 }
+
 .btn-filtro2{
     display: block;
     border: black 2px solid;
     cursor: pointer;
     box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.845);
 }
-
 
 /* ============================================
    ABOUT ME
@@ -478,16 +519,34 @@ padding: 4rem;
    }
 
    .skill-card{
-    border: 2px solid #fff;
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
     color: #fff;
+    background-color: rgb(212, 212, 216);
+   }
+   .skillstitles{
+    margin-left: 3.5rem;
+    color:rgb(126, 2, 2);
+    font-weight: 600;
    }
 .skill-card-sub-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
     padding: 1rem;
+   }
+.skill-card-sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+   .icons{
+    width: 2rem;
+    height: 2rem;
+    
    }
 /* ============================================
    CONTACT
