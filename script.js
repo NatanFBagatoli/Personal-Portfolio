@@ -188,7 +188,7 @@ canvas.height = canvas.parentElement.clientHeight;
 
 const estrelas = [];
 
-    for (let i = 0; i < 300; i++){
+    for (let i = 0; i < 350; i++){
         estrelas.push({
             x: Math.random() * canvas.width - canvas.width / 2, 
             y: Math.random() * canvas.height - canvas.height / 2,
