@@ -298,3 +298,7 @@ window.addEventListener("resize", () => {
 
     desenharestrelas();
  });
+
+//(function (){
+//    const infocard = document.getElementById('skillInfoCard');
+//})
