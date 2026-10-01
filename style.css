@@ -259,8 +259,14 @@ body {
     border: 2px solid var(--tertiary);
     box-shadow: 5px 5px 0px 0px var(--secondary);
     transition: all 0.3s ease;
-}
+    padding: 1rem;
 
+}
+.focosprincipais{
+    width: 100%;
+    border-bottom: 1px solid var(--tertiary);
+    padding-bottom: 15px;
+}
 
 .hero-card-core:hover {
     border-color: var(--accent);
