@@ -88,7 +88,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     line-height: 0.5;
 
     padding-top: 1rem;
@@ -345,7 +344,9 @@ body {
     color: var(--black);
     box-shadow: 5px 5px 0px 0px var(--black);
     transition: all 0.3s ease;
+    
 }
+
 
 
 .btn-project:hover {
@@ -397,7 +398,7 @@ body {
 .letreiro p {
     display: inline-block;
     margin: 0;
-    animation: passar 30s linear infinite;
+    animation: passar 20s linear infinite;
 }
 
 

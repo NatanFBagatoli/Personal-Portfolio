@@ -128,6 +128,7 @@ const formacoes = [
     },
 
 ]
+function filtros(){}
 
 function mostrarExperiencias(index){
 const experiencia = experiencias[index];
