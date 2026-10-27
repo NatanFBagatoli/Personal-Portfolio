@@ -300,6 +300,232 @@ window.addEventListener("resize", () => {
     desenharestrelas();
  });
 
-//(function (){
-//    const infocard = document.getElementById('skillInfoCard');
-//})
+// ============================================
+// TECNOLOGIAS
+// ============================================
+
+const tecnologias = {
+    html: {
+        nome: "HTML",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Estruturação de páginas web",
+        competencias: "HTML semântico, formulários",
+        projeto: "Portfólio",
+        icone: "/techstackimgs/htmlicon.png"
+    },
+
+    css: {
+        nome: "CSS",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Estilização de interfaces",
+        competencias: "Flexbox, Grid, responsividade",
+        projeto: "Portfólio",
+        icone: "/techstackimgs/cssicon.png"
+    },
+
+    javascript: {
+        nome: "JavaScript",
+        tempo: "3 anos",
+        formacao: "SENAI e Entra21",
+        aplicacoes: "Desenvolvimento Web",
+        competencias: "DOM, Fetch API, ES6+",
+        projeto: "Biblioteca de Plêiades",
+        icone: "/techstackimgs/javascripticon.png"
+    },
+
+    typescript: {
+        nome: "TypeScript",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Desenvolvimento Web",
+        competencias: "Tipagem estática, interfaces",
+        projeto: "A definir",
+        icone: "/techstackimgs/typescripticon.png"
+    },
+
+    react: {
+        nome: "React",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Interfaces dinâmicas",
+        competencias: "Componentes, Hooks, Router",
+        projeto: "AuthSystem",
+        icone: "/techstackimgs/reacticon.png"
+    },
+
+    tailwind: {
+        nome: "TailwindCSS",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Estilização de interfaces",
+        competencias: "Utility classes, responsividade",
+        projeto: "AuthSystem",
+        icone: "/techstackimgs/tailwindicon.png"
+    },
+
+    vite: {
+        nome: "Vite",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Ferramentas de desenvolvimento",
+        competencias: "Build, desenvolvimento local",
+        projeto: "AuthSystem",
+        icone: "/techstackimgs/viteicon.png"
+    },
+
+    notion: {
+        nome: "Notion",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Organização e documentação",
+        competencias: "A definir",
+        projeto: "A definir",
+        icone: "/techstackimgs/notionicon.png"
+    },
+
+    figma: {
+        nome: "Figma",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Design de interfaces",
+        competencias: "Protótipos, layouts",
+        projeto: "A definir",
+        icone: "/techstackimgs/figmaicon.png"
+    },
+
+    python: {
+        nome: "Python",
+        tempo: "1 ano",
+        formacao: "Estudos independentes",
+        aplicacoes: "Automação e IA",
+        competencias: "APIs, Pandas, OpenCV",
+        projeto: "Star Assistant",
+        icone: "/techstackimgs/pythonicon.png"
+    },
+
+    node: {
+        nome: "Node.js",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Desenvolvimento Backend",
+        competencias: "APIs REST, npm",
+        projeto: "AuthSystem",
+        icone: "/techstackimgs/nodeicon.png"
+    },
+
+    java: {
+        nome: "Java",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Desenvolvimento de software",
+        competencias: "POO, coleções",
+        projeto: "A definir",
+        icone: "/techstackimgs/javaicon.png"
+    },
+
+    express: {
+        nome: "Express",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "APIs REST",
+        competencias: "Rotas, middleware",
+        projeto: "AuthSystem",
+        icone: "/techstackimgs/expressicon.png"
+    },
+
+    springboot: {
+        nome: "Spring Boot",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Desenvolvimento Backend",
+        competencias: "A definir",
+        projeto: "A definir",
+        icone: "/techstackimgs/springbooticon.png"
+    },
+
+    mysql: {
+        nome: "MySQL",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Banco de dados relacional",
+        competencias: "SQL, consultas",
+        projeto: "A definir",
+        icone: "/techstackimgs/mysqlicon.png"
+    },
+
+    postgresql: {
+        nome: "PostgreSQL",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Banco de dados relacional",
+        competencias: "SQL, consultas",
+        projeto: "A definir",
+        icone: "/techstackimgs/postgressqlicon.png"
+    },
+
+    mongodb: {
+        nome: "MongoDB",
+        tempo: "A definir",
+        formacao: "A definir",
+        aplicacoes: "Banco de dados NoSQL",
+        competencias: "CRUD, documentos",
+        projeto: "AuthSystem",
+        icone: "/techstackimgs/mongodbicon.png"
+    }
+};
+
+let tecnologiaFixada = null;
+
+const techName = document.getElementById("tech-name");
+const techXp = document.getElementById("tech-xp");
+const techEducation = document.getElementById("tech-education");
+const techApplications = document.getElementById("tech-applications");
+const techSkills = document.getElementById("tech-skills");
+const techProjects = document.getElementById("tech-projects");
+const techIcon = document.getElementById("tech-icon");
+const techLabel = document.getElementById("tech-label");
+
+function mostrarTecnologia(id) {
+    const tech = tecnologias[id];
+
+    if (!tech) return;
+
+    techName.textContent = tech.nome;
+    techXp.textContent = tech.tempo;
+    techEducation.textContent = tech.formacao;
+    techApplications.textContent = tech.aplicacoes;
+    techSkills.textContent = tech.competencias;
+    techProjects.textContent = tech.projeto;
+    const icone = document.getElementById("tech-icon");
+    icone.src = tech.icone;
+    icone.alt = tech.nome;
+    icone.style.display = "block";
+
+}
+
+const techButtons = document.querySelectorAll(".tech-icon");
+
+techButtons.forEach(botao => {
+    const id = botao.dataset.tech;
+
+    if (!tecnologias[id]) return;
+
+    botao.addEventListener("mouseenter", () => {
+        if (tecnologiaFixada === null) {
+            mostrarTecnologia(id);
+        }
+    });
+
+    botao.addEventListener("click", () => {
+        if (tecnologiaFixada === id) {
+            tecnologiaFixada = null;
+        } else {
+            tecnologiaFixada = id;
+        }
+
+        mostrarTecnologia(id);
+    });
+});
+
