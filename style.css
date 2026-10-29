@@ -1,4 +1,3 @@
-
 :root {
     /* ============================================
        PALETA DE CORES
@@ -260,7 +259,8 @@ body {
     padding: 1rem;
 
 }
-.focosprincipais{
+
+.focosprincipais {
     width: 100%;
     border-bottom: 1px solid var(--tertiary);
     padding-bottom: 15px;
@@ -295,7 +295,7 @@ body {
     border: 1px solid var(--tertiary);
     display: flex;
     justify-content: center;
-    
+
 }
 
 
@@ -327,7 +327,7 @@ body {
     justify-content: center;
     gap: 2rem;
     margin-top: 20%;
-    
+
 }
 
 
@@ -343,7 +343,7 @@ body {
     color: var(--black);
     box-shadow: 5px 5px 0px 0px var(--black);
     transition: all 0.3s ease;
-    
+
 }
 
 
@@ -405,6 +405,7 @@ body {
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -493,7 +494,8 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.projetotitulo{
+
+.projetotitulo {
     background-color: var(--accent);
     width: 100%;
     height: auto;
@@ -701,42 +703,56 @@ body {
     transform: scale(1.05);
 }
 
+/* ============================================
+   PESQUISAS
+   ============================================ */
+.pesquisas-container {
+    padding: 4rem;
+
+}
+
+.pesquisas-card {
+    background-color: var(--secondary);
+    border: 2px solid var(--black);
+    padding: 2rem;
+}
 
 /* ============================================
    SKILLS
    ============================================ */
-.skills-container{
+.skills-container {
     padding: 4rem;
+
 }
+
 .skills-grid {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 1rem;
-    padding: 4rem;
+    
     color: var(--text);
 }
 
-.col-skill-info1{
- display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.col-skill-info2{
+.col-skill-info1 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.skill-card-info{
-   
+.col-skill-info2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-card-info {
+    display: flex;
     border: 2px solid var(--black);
     display: flex;
     flex-direction: column;
     color: var(--surface);
     background-color: var(--secondary);
-    width: 100%;
-    height: 100%;
+
 }
 
 .skill-card {
@@ -745,13 +761,22 @@ body {
     flex-direction: column;
     color: var(--surface);
     background-color: var(--secondary);
+    font-size: .80rem;
+    font-weight: 700;
+    letter-spacing: .12em;
 }
 
 
 .skillstitles {
-    margin-left: 3.5rem;
-    color: var(--accent-dark);
     font-weight: 600;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--tertiary);
+    background: rgba(0, 0, 0, .2);
+    color: var(--muted);
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    margin: 0 0 1rem 0;
 }
 
 .skill-card-sub-grid {
@@ -764,17 +789,18 @@ body {
 
 .skill-card-sub {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 0.5rem;
     cursor: pointer;
     background: transparent;
     border: none;
     color: inherit;
     font: inherit;
-    
+
 }
-.skill-card-sub:hover{
+
+.skill-card-sub:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -785,6 +811,110 @@ body {
     height: 2rem;
 }
 
+.tech-about {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1.25rem 1rem;
+    color: var(--accent-soft);
+    font-size: .66rem;
+    font-weight: 700;
+    letter-spacing: .15em;
+}
+
+.span-line {
+    flex: 1;
+    height: 1px;
+    background: var(--tertiary);
+}
+
+.iconstech {
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid var(--tertiary);
+    box-shadow: 5px 5px 0px 0px var(--black);
+    margin-bottom: 1rem;
+}
+
+.tech-header {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+#tech-name {
+    margin: .35rem 0;
+    font-size: clamp(1.4rem, 2vw, 1.9rem);
+    font-weight: 700;
+    line-height: 1.12;
+    overflow-wrap: anywhere;
+}
+
+.tech-subtitle {
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: var(--muted);
+}
+
+.tech-overline {
+    color: var(--muted);
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.tech-top {
+    padding: 1rem;
+    border-bottom: 1px solid var(--tertiary);
+    background: rgba(0, 0, 0, .2);
+    color: var(--muted);
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.tech-details {
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: .66rem;
+    font-weight: 700;
+    letter-spacing: .15em;
+}
+
+.tech-details-row {
+    background: rgba(0, 0, 0, .2);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.2rem;
+    border: 1px solid var(--tertiary);
+}
+
+.tech-title {
+    margin: 0
+}
+
+.tech-details-row svg {
+    margin-left: 1rem;
+}
+
+.skills-footer {
+    font-size: .66rem;
+    font-weight: 700;
+    letter-spacing: .15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
 /* ============================================
    CONTACT
@@ -801,12 +931,10 @@ body {
     margin: 0 auto;
 }
 
-
 .contact-col1 {
     display: flex;
     flex-direction: column;
 }
-
 
 .contact-col2 {
     display: flex;
@@ -814,13 +942,11 @@ body {
     gap: 1rem;
 }
 
-
 .contact-card-email {
     border: 2px solid var(--tertiary);
     height: 100%;
     background-color: var(--secondary);
 }
-
 
 .contact-card-telefone {
     border: 2px solid var(--tertiary);
@@ -828,13 +954,11 @@ body {
     background-color: var(--secondary);
 }
 
-
 .contact-card-linkedin {
     border: 2px solid var(--tertiary);
     height: 40%;
     background-color: var(--secondary);
 }
-
 
 /* ============================================
    FOOTER
@@ -849,4 +973,3 @@ footer {
     border-top: 4px solid var(--tertiary);
     padding: 4rem;
 }
-

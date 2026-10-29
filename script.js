@@ -307,19 +307,19 @@ window.addEventListener("resize", () => {
 const tecnologias = {
     html: {
         nome: "HTML",
-        tempo: "A definir",
-        formacao: "A definir",
-        aplicacoes: "Estruturação de páginas web",
-        competencias: "HTML semântico, formulários",
-        projeto: "Portfólio",
+        tempo: "+3 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
+        aplicacoes: "Biblioteca de Plêiades, Portfolio",
+        competencias: "Semântica, W3C validator, a11y",
+        projeto: "Personal Portfólio",
         icone: "/techstackimgs/htmlicon.png"
     },
 
     css: {
         nome: "CSS",
-        tempo: "A definir",
-        formacao: "A definir",
-        aplicacoes: "Estilização de interfaces",
+        tempo: "+3 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
+        aplicacoes: "Biblioteca de Plêiades, Portfolio",
         competencias: "Flexbox, Grid, responsividade",
         projeto: "Portfólio",
         icone: "/techstackimgs/cssicon.png"
@@ -327,9 +327,9 @@ const tecnologias = {
 
     javascript: {
         nome: "JavaScript",
-        tempo: "3 anos",
-        formacao: "SENAI e Entra21",
-        aplicacoes: "Desenvolvimento Web",
+        tempo: "+3 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
+        aplicacoes: "Biblioteca de Plêiades, Portfolio",
         competencias: "DOM, Fetch API, ES6+",
         projeto: "Biblioteca de Plêiades",
         icone: "/techstackimgs/javascripticon.png"
@@ -337,8 +337,8 @@ const tecnologias = {
 
     typescript: {
         nome: "TypeScript",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "Desenvolvimento Web",
         competencias: "Tipagem estática, interfaces",
         projeto: "A definir",
@@ -347,8 +347,8 @@ const tecnologias = {
 
     react: {
         nome: "React",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "Interfaces dinâmicas",
         competencias: "Componentes, Hooks, Router",
         projeto: "AuthSystem",
@@ -357,8 +357,8 @@ const tecnologias = {
 
     tailwind: {
         nome: "TailwindCSS",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "Estilização de interfaces",
         competencias: "Utility classes, responsividade",
         projeto: "AuthSystem",
@@ -367,8 +367,8 @@ const tecnologias = {
 
     vite: {
         nome: "Vite",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "Ferramentas de desenvolvimento",
         competencias: "Build, desenvolvimento local",
         projeto: "AuthSystem",
@@ -377,8 +377,8 @@ const tecnologias = {
 
     notion: {
         nome: "Notion",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "Organização e documentação",
         competencias: "A definir",
         projeto: "A definir",
@@ -387,8 +387,8 @@ const tecnologias = {
 
     figma: {
         nome: "Figma",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "Design de interfaces",
         competencias: "Protótipos, layouts",
         projeto: "A definir",
@@ -397,7 +397,7 @@ const tecnologias = {
 
     python: {
         nome: "Python",
-        tempo: "1 ano",
+        tempo: "+2 Anos",
         formacao: "Estudos independentes",
         aplicacoes: "Automação e IA",
         competencias: "APIs, Pandas, OpenCV",
@@ -407,8 +407,8 @@ const tecnologias = {
 
     node: {
         nome: "Node.js",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "Desenvolvimento Backend",
         competencias: "APIs REST, npm",
         projeto: "AuthSystem",
@@ -417,8 +417,8 @@ const tecnologias = {
 
     java: {
         nome: "Java",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+3 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "Desenvolvimento de software",
         competencias: "POO, coleções",
         projeto: "A definir",
@@ -427,8 +427,8 @@ const tecnologias = {
 
     express: {
         nome: "Express",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "APIs REST",
         competencias: "Rotas, middleware",
         projeto: "AuthSystem",
@@ -437,8 +437,8 @@ const tecnologias = {
 
     springboot: {
         nome: "Spring Boot",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+3 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "Desenvolvimento Backend",
         competencias: "A definir",
         projeto: "A definir",
@@ -447,8 +447,8 @@ const tecnologias = {
 
     mysql: {
         nome: "MySQL",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+3 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "Banco de dados relacional",
         competencias: "SQL, consultas",
         projeto: "A definir",
@@ -457,8 +457,8 @@ const tecnologias = {
 
     postgresql: {
         nome: "PostgreSQL",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "Banco de dados relacional",
         competencias: "SQL, consultas",
         projeto: "A definir",
@@ -467,13 +467,49 @@ const tecnologias = {
 
     mongodb: {
         nome: "MongoDB",
-        tempo: "A definir",
-        formacao: "A definir",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
         aplicacoes: "Banco de dados NoSQL",
         competencias: "CRUD, documentos",
         projeto: "AuthSystem",
         icone: "/techstackimgs/mongodbicon.png"
-    }
+    },
+    git: {
+        nome: "Git/GitHub",
+        tempo: "+3 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
+        aplicacoes: "Banco de dados NoSQL",
+        competencias: "CRUD, documentos",
+        projeto: "AuthSystem",
+        icone: "/techstackimgs/githubicon.png"
+    },
+    vercel: {
+        nome: "Vercel",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
+        aplicacoes: "Banco de dados NoSQL",
+        competencias: "CRUD, documentos",
+        projeto: "AuthSystem",
+        icone: "/techstackimgs/vercelicon.png"
+    },
+    postman: {
+        nome: "Postman",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
+        aplicacoes: "Banco de dados NoSQL",
+        competencias: "CRUD, documentos",
+        projeto: "AuthSystem",
+        icone: "/techstackimgs/postmanicon.png"
+    },
+    docker: {
+        nome: "Docker",
+        tempo: "+2 Anos",
+        formacao: "Senai (ADS) & Senac (Entra 21)",
+        aplicacoes: "Banco de dados NoSQL",
+        competencias: "CRUD, documentos",
+        projeto: "AuthSystem",
+        icone: "/techstackimgs/dockericon.png"
+    },
 };
 
 let tecnologiaFixada = null;
